@@ -15,6 +15,13 @@
 		98CBE6D02C161F4600D445FD /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CBE6CF2C161F4600D445FD /* AuthScreen.swift */; };
 		98CBE6D42C161F9600D445FD /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CBE6D32C161F9600D445FD /* Fonts.swift */; };
 		98CBE6D72C161FC500D445FD /* MainButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98CBE6D62C161FC500D445FD /* MainButtonStyle.swift */; };
+		98D5E9022C22153D004D493C /* ContactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9012C22153D004D493C /* ContactsScreen.swift */; };
+		98D5E9062C221617004D493C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9052C221617004D493C /* Person.swift */; };
+		98D5E9082C236F04004D493C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9072C236F04004D493C /* SearchView.swift */; };
+		98D5E90B2C245F6C004D493C /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90A2C245F6B004D493C /* ContactCell.swift */; };
+		98D5E90D2C246043004D493C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90C2C246043004D493C /* AvatarView.swift */; };
+		98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90E2C2460D0004D493C /* StatusView.swift */; };
+		98D5E9112C24611C004D493C /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9102C24611C004D493C /* StoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		98CBE6CF2C161F4600D445FD /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		98CBE6D32C161F9600D445FD /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		98CBE6D62C161FC500D445FD /* MainButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonStyle.swift; sourceTree = "<group>"; };
+		98D5E9012C22153D004D493C /* ContactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsScreen.swift; sourceTree = "<group>"; };
+		98D5E9052C221617004D493C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		98D5E9072C236F04004D493C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		98D5E90A2C245F6B004D493C /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		98D5E90C2C246043004D493C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		98D5E90E2C2460D0004D493C /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		98D5E9102C24611C004D493C /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 				98CBE6BE2C161E1900D445FD /* ChatAppApp.swift */,
 				98CBE6C02C161E1900D445FD /* ContentView.swift */,
 				98CBE6CD2C161F2200D445FD /* OnboardingScreen.swift */,
+				98D5E9032C22158F004D493C /* Contacts */,
 				98CBE6CF2C161F4600D445FD /* AuthScreen.swift */,
 				98CBE6D52C161FB000D445FD /* CommonViews */,
 				98CBE6D12C161F7100D445FD /* SupportingFiles */,
@@ -101,8 +116,38 @@
 			isa = PBXGroup;
 			children = (
 				98CBE6D62C161FC500D445FD /* MainButtonStyle.swift */,
+				98D5E9072C236F04004D493C /* SearchView.swift */,
 			);
 			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		98D5E9032C22158F004D493C /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				98D5E9092C245F0A004D493C /* Views */,
+				98D5E9042C2215FC004D493C /* Models */,
+				98D5E9012C22153D004D493C /* ContactsScreen.swift */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		98D5E9042C2215FC004D493C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98D5E9052C221617004D493C /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98D5E9092C245F0A004D493C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98D5E90A2C245F6B004D493C /* ContactCell.swift */,
+				98D5E90C2C246043004D493C /* AvatarView.swift */,
+				98D5E90E2C2460D0004D493C /* StatusView.swift */,
+				98D5E9102C24611C004D493C /* StoryView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,11 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D5E90B2C245F6C004D493C /* ContactCell.swift in Sources */,
+				98D5E9022C22153D004D493C /* ContactsScreen.swift in Sources */,
+				98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */,
+				98D5E9082C236F04004D493C /* SearchView.swift in Sources */,
 				98CBE6C12C161E1900D445FD /* ContentView.swift in Sources */,
+				98D5E90D2C246043004D493C /* AvatarView.swift in Sources */,
 				98CBE6D42C161F9600D445FD /* Fonts.swift in Sources */,
 				98CBE6D72C161FC500D445FD /* MainButtonStyle.swift in Sources */,
 				98CBE6BF2C161E1900D445FD /* ChatAppApp.swift in Sources */,
+				98D5E9112C24611C004D493C /* StoryView.swift in Sources */,
 				98CBE6D02C161F4600D445FD /* AuthScreen.swift in Sources */,
+				98D5E9062C221617004D493C /* Person.swift in Sources */,
 				98CBE6CE2C161F2200D445FD /* OnboardingScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +375,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -361,7 +413,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;

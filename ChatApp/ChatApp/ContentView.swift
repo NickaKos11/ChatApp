@@ -9,7 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        OnboardingScreen()
+        TabView {
+            ContactsScreen()
+                .tabItem {
+                    Image("ContactsIcon")
+                }
+            
+            ContactsScreen()
+                .tabItem {
+                    Image("ChatsIcon")
+                }
+            
+            ContactsScreen()
+                .tabItem {
+                    Image("MenuIcon")
+                }
+            
+        }.accentColor(.buttonActive)
+
     }
 }
 
