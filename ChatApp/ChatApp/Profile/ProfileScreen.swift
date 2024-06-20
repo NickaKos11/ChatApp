@@ -13,26 +13,37 @@ struct ProfileScreen: View {
     var body: some View {
         ZStack {
             Color.customBackground.ignoresSafeArea()
+            
             VStack(spacing: 0) {
-                Image("Person")
-                    .renderingMode(.template)
-                    .foregroundStyle(.mainText)
-                    .frame(width: 112, height: 112)
-                    .background(Circle()
-                        .fill(.accentBackground)
-                        .frame(width: 200, height: 200))
-                    .padding(.bottom, 70)
-                
-                Text(person.name+(person.surname != nil ? " \(person.surname!)" : ""))
-                    .textFont(.heading1)
-                    .foregroundStyle(.mainText)
-                    .padding(.bottom, 4)
-                
-                Text(person.phone)
-                    .textFont(.metadata3)
-                    .foregroundStyle(.lightText)
-                    .padding(.bottom, 40)
+                PersonAvatarView()
+                PersonInfoView(person: person)
             }
+            .navigationBarBackButtonHidden()
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    HStack {
+                        DismissButtonView()
+                        
+                        Text("Профиль")
+                            .foregroundColor(.mainText)
+                            .textFont(.subheading1)
+                    }
+                }
+                
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        // edit profile info
+                    }, label: {
+                        Image("pencil")
+                            .renderingMode(.template)
+                            .foregroundColor(.mainText)
+                            .frame(width: 24, height: 24)
+                            .fontWeight(.semibold)
+                            .padding(.trailing, 8)
+                    })
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 }

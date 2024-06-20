@@ -23,6 +23,9 @@
 		98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90E2C2460D0004D493C /* StatusView.swift */; };
 		98D5E9112C24611C004D493C /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9102C24611C004D493C /* StoryView.swift */; };
 		98D5E9142C247F6D004D493C /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9132C247F6C004D493C /* ProfileScreen.swift */; };
+		98D5E91D2C24D3E8004D493C /* PersonAvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E91C2C24D3E8004D493C /* PersonAvatarView.swift */; };
+		98D5E91F2C24D433004D493C /* DismissButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E91E2C24D433004D493C /* DismissButtonView.swift */; };
+		98D5E9212C24D4AD004D493C /* PersonInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9202C24D4AD004D493C /* PersonInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		98D5E90E2C2460D0004D493C /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		98D5E9102C24611C004D493C /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
 		98D5E9132C247F6C004D493C /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		98D5E91C2C24D3E8004D493C /* PersonAvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAvatarView.swift; sourceTree = "<group>"; };
+		98D5E91E2C24D433004D493C /* DismissButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButtonView.swift; sourceTree = "<group>"; };
+		98D5E9202C24D4AD004D493C /* PersonInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 			children = (
 				98CBE6D62C161FC500D445FD /* MainButtonStyle.swift */,
 				98D5E9072C236F04004D493C /* SearchView.swift */,
+				98D5E91E2C24D433004D493C /* DismissButtonView.swift */,
 			);
 			path = CommonViews;
 			sourceTree = "<group>";
@@ -165,6 +172,8 @@
 		98D5E9152C249F8C004D493C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				98D5E91C2C24D3E8004D493C /* PersonAvatarView.swift */,
+				98D5E9202C24D4AD004D493C /* PersonInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -244,10 +253,13 @@
 				98D5E9022C22153D004D493C /* ContactsScreen.swift in Sources */,
 				98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */,
 				98D5E9082C236F04004D493C /* SearchView.swift in Sources */,
+				98D5E91F2C24D433004D493C /* DismissButtonView.swift in Sources */,
 				98CBE6C12C161E1900D445FD /* ContentView.swift in Sources */,
 				98D5E90D2C246043004D493C /* AvatarView.swift in Sources */,
 				98CBE6D42C161F9600D445FD /* Fonts.swift in Sources */,
 				98CBE6D72C161FC500D445FD /* MainButtonStyle.swift in Sources */,
+				98D5E9212C24D4AD004D493C /* PersonInfoView.swift in Sources */,
+				98D5E91D2C24D3E8004D493C /* PersonAvatarView.swift in Sources */,
 				98CBE6BF2C161E1900D445FD /* ChatAppApp.swift in Sources */,
 				98D5E9112C24611C004D493C /* StoryView.swift in Sources */,
 				98CBE6D02C161F4600D445FD /* AuthScreen.swift in Sources */,
