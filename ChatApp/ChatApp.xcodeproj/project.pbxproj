@@ -22,6 +22,7 @@
 		98D5E90D2C246043004D493C /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90C2C246043004D493C /* AvatarView.swift */; };
 		98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E90E2C2460D0004D493C /* StatusView.swift */; };
 		98D5E9112C24611C004D493C /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9102C24611C004D493C /* StoryView.swift */; };
+		98D5E9142C247F6D004D493C /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D5E9132C247F6C004D493C /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		98D5E90C2C246043004D493C /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		98D5E90E2C2460D0004D493C /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		98D5E9102C24611C004D493C /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		98D5E9132C247F6C004D493C /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				98CBE6BE2C161E1900D445FD /* ChatAppApp.swift */,
 				98CBE6C02C161E1900D445FD /* ContentView.swift */,
 				98CBE6CD2C161F2200D445FD /* OnboardingScreen.swift */,
+				98D5E9122C247F48004D493C /* Profile */,
 				98D5E9032C22158F004D493C /* Contacts */,
 				98CBE6CF2C161F4600D445FD /* AuthScreen.swift */,
 				98CBE6D52C161FB000D445FD /* CommonViews */,
@@ -146,6 +149,22 @@
 				98D5E90C2C246043004D493C /* AvatarView.swift */,
 				98D5E90E2C2460D0004D493C /* StatusView.swift */,
 				98D5E9102C24611C004D493C /* StoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98D5E9122C247F48004D493C /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				98D5E9152C249F8C004D493C /* Views */,
+				98D5E9132C247F6C004D493C /* ProfileScreen.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		98D5E9152C249F8C004D493C /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -221,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98D5E90B2C245F6C004D493C /* ContactCell.swift in Sources */,
+				98D5E9142C247F6D004D493C /* ProfileScreen.swift in Sources */,
 				98D5E9022C22153D004D493C /* ContactsScreen.swift in Sources */,
 				98D5E90F2C2460D0004D493C /* StatusView.swift in Sources */,
 				98D5E9082C236F04004D493C /* SearchView.swift in Sources */,

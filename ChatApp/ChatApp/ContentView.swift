@@ -22,11 +22,9 @@ struct ContentView: View {
             
             ContactsScreen()
                 .tabItem {
-                    Image("MenuIcon")
+                    Image(systemName: "ellipsis")
                 }
-            
-        }.accentColor(.buttonActive)
-
+        }
     }
 }
 

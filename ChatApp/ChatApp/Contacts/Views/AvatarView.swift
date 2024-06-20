@@ -23,7 +23,7 @@ struct AvatarView: View {
         } else {
             Text(initials)
                 .textFont(.bodyBold)
-                .foregroundStyle(.customBackground)
+                .foregroundStyle(.white)
                 .frame(width: 48, height: 48)
                 .background(RoundedRectangle(cornerRadius: 16).fill(.buttonActive))
                 .padding(2)

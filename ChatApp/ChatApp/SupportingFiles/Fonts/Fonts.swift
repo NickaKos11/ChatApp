@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 enum CustomFont {
+    case heading1
     case heading2
     case body1
     case body2
@@ -17,6 +18,7 @@ enum CustomFont {
     case subheading2
     case metadata1
     case metadata2
+    case metadata3
 }
 
 struct TextFontModifier: ViewModifier {
@@ -28,6 +30,7 @@ struct TextFontModifier: ViewModifier {
     
     func getCustomFont(_ font: CustomFont) -> Font {
         switch font {
+        case .heading1: .system(size: 24, weight: .semibold)
         case .heading2: .system(size: 24, weight: .bold)
         case .body1: .system(size: 14, weight: .semibold)
         case .body2: .system(size: 14, weight: .regular)
@@ -36,6 +39,7 @@ struct TextFontModifier: ViewModifier {
         case .subheading2: .system(size: 16, weight: .semibold)
         case .metadata1: .system(size: 12, weight: .regular)
         case .metadata2: .system(size: 10, weight: .regular)
+        case .metadata3: .system(size: 16, weight: .regular)
         }
     }
 }

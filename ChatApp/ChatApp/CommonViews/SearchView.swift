@@ -21,7 +21,7 @@ struct SearchView: View {
         }
         .frame(height: 36)
         .padding(.leading, 8)
-        .background(RoundedRectangle(cornerRadius: 4).fill(.searchBackground))
+        .background(RoundedRectangle(cornerRadius: 4).fill(.accentBackground))
         .padding(.horizontal, 24)
     }
 }

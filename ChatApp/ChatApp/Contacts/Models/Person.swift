@@ -11,10 +11,12 @@ import SwiftUI
 struct Person {
     let name: String
     let surname: String?
+    let phone: String
     let imageName: String?
     let status: Status
     let lastSeen: String
     let hasStory: Bool
+    
     
     var initials: String {
         if let surname {

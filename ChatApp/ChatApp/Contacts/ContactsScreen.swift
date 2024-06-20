@@ -10,9 +10,9 @@ import SwiftUI
 struct ContactsScreen: View {
     // data
     let contacts: [Person] =
-    [Person(name: "Анастасия", surname: "Иванова", imageName: "Avatar", status: .online, lastSeen: "yesterday", hasStory: true),
-     Person(name: "Петя", surname: "Ибрагимов", imageName: nil, status: .online, lastSeen: "now", hasStory: false),
-     Person(name: "Мама", surname: nil, imageName: nil, status: .offline, lastSeen: "3 hours ago", hasStory: true),
+    [Person(name: "Анастасия", surname: "Иванова", phone: "+7 989 111-37-11", imageName: "Avatar", status: .online, lastSeen: "yesterday", hasStory: true),
+     Person(name: "Петя", surname: "Ибрагимов", phone: "+7 989 111-37-12", imageName: nil, status: .online, lastSeen: "now", hasStory: false),
+     Person(name: "Мама", surname: nil, phone: "+7 989 111-37-13", imageName: nil, status: .offline, lastSeen: "3 hours ago", hasStory: true),
     ]
     
     @State private var path = [Person]()
@@ -38,7 +38,7 @@ struct ContactsScreen: View {
                     .foregroundStyle(.customBackground)
                     .padding(.trailing, 24)
                     .navigationDestination(for: Person.self) { person in
-                        Text(person.name)
+                        ProfileScreen(person: person)
                     }
                     
                 }.toolbar {

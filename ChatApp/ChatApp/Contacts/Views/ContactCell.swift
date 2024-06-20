@@ -35,5 +35,5 @@ struct ContactCell: View {
 }
 
 #Preview {
-    ContactCell(person: Person(name: "Анастасия", surname: "Иванова", imageName: "Avatar", status: .online, lastSeen: "yesterday", hasStory: true))
+    ContactCell(person: Person(name: "Анастасия", surname: "Иванова", phone: "+7-989-111-37-11", imageName: "Avatar", status: .online, lastSeen: "yesterday", hasStory: true))
 }
