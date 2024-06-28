@@ -28,12 +28,14 @@ class Factory {
     }
     
     func quitFromJob(person: Person?) {
-        if let person = person,
-           let passport = person.passport {
-            staff[passport.number+passport.series] = nil
-            print("Сотрудник \(person.name+" "+person.surname) уволен\n")
-        } else {
-           print("Такой сотрудник не работает в нашей компании")
+        if let person = person {
+            if let passport = person.passport,
+               staff[passport.number+passport.series] != nil {
+                staff[passport.number+passport.series] = nil
+                print("Сотрудник \(person.name+" "+person.surname) уволен\n")
+            } else {
+                print("\(person.name+" "+person.surname) не работает в нашей компании")
+            }
         }
         
         if staff.isEmpty {
