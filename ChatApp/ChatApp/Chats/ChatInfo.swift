@@ -1,22 +1,22 @@
 //
-//  Person.swift
+//  ChatInfo.swift
 //  ChatApp
 //
-//  Created by Костина Вероника  on 18.06.2024.
+//  Created by Костина Вероника  on 28.06.2024.
 //
 
 import Foundation
 import SwiftUI
 
-struct Person {
+struct ChatInfo: Identifiable {
+    let id: Int
     let name: String
     let surname: String?
-    let phone: String
     let imageName: String?
+    let unreadMessages: Int
+    let lastMessageDate: Date
+    let lastMessage: String
     let status: Status
-    let lastSeen: String
-    let hasStory: Bool
-    
     
     var initials: String {
         if let surname {
@@ -32,16 +32,7 @@ struct Person {
         return Image(imageName)
     }
     
-    var lastSeenString: String {
-        switch status {
-        case .online:
-            return "Online"
-        case .offline:
-            return "Last seen \(lastSeen)"
-        }
+    static func placeholder() -> ChatInfo {
+        ChatInfo(id: 0, name: "Имя", surname: "Фамилия", imageName: nil, unreadMessages: 1, lastMessageDate: .now, lastMessage: "Привет!", status: .online)
     }
-}
-
-extension Person: Hashable {
-    
 }
